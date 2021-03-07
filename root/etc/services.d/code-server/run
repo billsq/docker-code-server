@@ -18,6 +18,7 @@ exec \
 		/usr/local/bin/code-server \
 			--bind-addr 0.0.0.0:8443 \
 			--user-data-dir /config/data \
+			--extra-builtin-extensions-dir "/root/.code-server/extensions" \
 			--extensions-dir /config/extensions \
 			--disable-telemetry \
 			--auth "${AUTH}" \
